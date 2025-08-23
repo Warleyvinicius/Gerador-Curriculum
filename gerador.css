@@ -1,0 +1,585 @@
+html{margin: 0;                 /*HTML em Geral - zerando toda a configuração*/
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-image: url(planet2.jpg);
+    background-size:cover;         /*Imagem de fundo*/
+}
+
+
+/*Titulo Principal*/
+#mainTitle{
+    text-align: center;     
+    text-shadow: 2px 2px 7px rgba(185, 185, 187, 0.363);     /*Sombreamento do Texto*/
+    color: #504977fa;
+}
+
+/*Estilizaçao do Menu*/
+#main{
+    border: 2px solid rgb(245, 245, 245);
+    text-align: left;
+    max-width: 1100px;           /*tamanho maximo que o campo pode atingir*/
+    position: relative;  
+    margin: 50px auto;
+    padding: 20px 50px;
+    
+    background-color: rgb(224, 241, 241);
+    opacity: 0.9;
+    border-radius: 20px
+}
+
+
+/* inputs  em Geral */
+input{
+    margin: 5px;}              /*Espaçamento entre os inputs*/
+
+
+
+/* Inputs tipo Texto */    
+#myName{
+    width: 35%;
+    padding: 2px;
+    min-width: 15%;
+}
+#myAdress{
+    width: 35%;
+    padding: 2px;
+}       
+#typeComplement{                 
+    width: 25%;
+    padding: 2px;
+}
+
+#neighborhood{
+    width: 25%;
+    padding: 2px;
+}
+#number{
+    width: 50px;
+    padding: 2px;
+}
+#state{
+    width: 30px;
+    padding: 2px;
+}
+#email{
+    width: 20%;
+    padding: 2px;
+}
+#cnh{
+    width: 20px;
+    padding: 2px;
+}
+#cep{
+    width:60px ;
+}
+#cep2{
+    width: 40px;
+}
+
+/*Campo de Text Area do Objetivo*/
+textarea{
+    
+    width:40%;
+    height:3cm;
+    display: block;
+}
+
+
+/*INFORMAÇÃO PROFISSIONAL ATUAL*/
+
+/*label*/
+#Cargo{
+    display: block}
+#Atividade{
+    display: inline-flex;
+}
+#atividade{
+    width:10cm;
+    height:3cm
+}
+#data{
+    display: block;
+}
+
+
+/*id geral Experiencias profissionais*/
+[id^="lastExp_"],#labelMyjob{
+    margin-bottom: 40px;
+    
+}
+
+/*Inputs de data*/
+.dataTermino,
+#checkBox,
+#endDate{
+    margin-left: 10px;
+
+}
+
+
+/*INFORMAÇÃO PROFISSIONAL*/
+
+/*label*/
+#Cargo_{
+    display: block}
+#Atividade{
+    display: inline-flex;
+}
+#atividade_{
+    width:10cm;
+    height:3cm
+
+}
+#data_{
+    display: block;
+}
+
+
+/*Botao Adicionar Experiencia / Formação */
+#addExp,
+#adc,
+#addInfo,
+#myJob{
+color: rgb(8, 4, 4);
+margin-top: 50px;
+border-radius: 50px;
+border-color: rgb(0, 0, 0);
+background-color: rgb(233, 235, 235);
+
+}
+
+
+
+/*Botao Remover Experiencia*/
+#removerinfAdc, #removerMyJob{
+    display: inline ;
+    margin-left: 10px;
+}
+
+/* BOTOES */
+#btnremover,#remover,#removerinfAdc,#removerMyJob
+{
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius:10px;
+    color:rgb(58,5, 5) border white;
+    background-color: rgb(233, 235, 235);
+    cursor:pointer;
+    display:block;
+}
+
+/*Label experiencia profissional Criadas Dianamicamente*/
+.labelEmpresa,#academic  {
+    margin-top: 30px;
+}
+
+
+/*Informação Acadêmica*/
+
+[id^='academic_']{
+    margin-bottom: 30px;
+
+}
+
+#newForm,
+#cursando{
+   
+    display: block;
+}
+
+
+/*Campo HIDE*/
+.hide{
+    display: none;
+}
+
+  /*Estilização Pre Vizualização*/
+
+  #preview{
+    background-color: rgb(146, 195, 241);
+    }
+
+   
+    /*Name*/
+   #previewName{
+    display:flex;              
+    justify-content: center;    /*Objeto Centralizado*/
+    font-size: 35px;
+    margin-bottom: 12px;
+   }
+
+
+    /*Adress and Number*/
+    
+#contAdress{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+#previewNumber::before{
+    content: ', ';
+}
+#previewtypeComplement::before{
+    content: ', ';
+
+}
+
+/*Neighborhood and City*/
+#cityNeigh{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+#previewCity::before{
+    content: ', ';
+}
+#previewCity::after{
+    content: " - ";
+}
+#previewState{
+padding-left: 0.25%;
+}
+#previewCep{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+/*previewTell*/
+#previewTell,#previewEmail,#previewCnh{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+/*Experiencia Atual*/
+#previewExperience,
+#previewFunction,
+#previewActivity,
+#previewDate{
+    display: block;
+    margin-bottom:8px;
+}
+
+/*Experiencias Profissionais*/
+[id^="previewLastExperience_"],
+[id^=previewLastFunction_],
+[id^="previewLastActivity_"],
+[id^="previewLastDate_"]{
+    display: block;
+    margin-bottom: 8px;
+}
+
+/*espaçamento entre experiencias*/
+[id^="previewLastExperience_"],#previewExperience{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+
+/*Campo ultimas experiencias*/
+#escolaridade{
+    display: block;
+    margin-top: 1cm;
+    
+}
+
+
+
+/*Formação Academica*/
+
+[id^=formation_],
+[id^=school_],
+[id^=datInicio_],
+[id^=cursando_]{
+    display: block;
+
+}
+[id^="formation_"]{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+[id^='cursando_']{
+    margin-bottom: 16px;
+    margin-left: 5px;
+    font-size: 12px;
+    display: block;
+}
+
+/*Informações Adicionais*/
+
+[id^='inf_']{
+    display: block;
+}
+
+.sem-fundo * {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: black !important;
+    font-family: Arial, sans-serif !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-before: auto !important;
+    box-sizing: border-box !important;
+
+  }
+  
+
+#view, #generate {
+    font-size: 15px;
+    padding: 6px 12px; 
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: white;
+    background: linear-gradient(to bottom, #ededeb, #ddddd8); 
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #bcbcb8, 0 6px 8px rgba(0,0,0,0.2);
+    transition: all 0.1s ease-in-out;
+}
+
+/* efeito hover */
+#view:hover, #generate:hover {
+    filter: brightness(1.05);
+}
+
+/* efeito ao clicar (pressionar) */
+#view:active, #generate:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #bcbcb8, 0 4px 6px rgba(0,0,0,0.2);
+}
+
+
+ @media(max-width:450px){
+  
+    body{
+        background-image: url(planet2.jpg);
+    }
+    #mainTitle{
+         
+        text-shadow: 5px 2px 15px rgb(254, 254, 255);     /*Sombreamento do Texto*/
+        color: #01010a;
+     
+        }
+    #main{
+        background-color: rgb(224, 241, 241);
+        opacity: 0.9;
+        border-radius: 20px    }
+    
+    /*Campo Informações Pessoais*/    
+
+    
+    #myName,#myAdress,#neighborhood,#city{
+        width: 100%;
+        height: 20px;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 15px;
+
+        
+    }
+    #number{
+        width: 18%;
+        display:list-item;
+        height: 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+
+    }
+
+    #typeComplement{
+        display: inline-block;
+        width: 100%;
+        height: 20px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    #state{
+        width: 15%;
+        display:inline-block;
+        margin-bottom: 10px;
+        font-size: 15px;
+
+    }
+
+    #cep{
+        width: 25%;
+        height: 20px;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 15px;
+
+
+    }
+    #cep2{
+        width: 15%;
+        height: 20px;
+        display: inline-block;
+        font-size: 15px;
+
+    }
+    #tell{
+        width: 50%;
+        height: 20px;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 15px;
+
+    }
+    #email{
+        width: 100%;
+        height: 20px;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    #cnh{
+        width: 10%;
+        display:inline-block;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    /*Objetivo Profissional*/
+
+    #objectiveText{
+        width: 100%;
+        height: 4cm;
+        font-size: 16px;
+    }
+
+    /*Experiencia Atual*/
+
+    #empresa,#cargo{
+        width: 100%;
+        height: 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    #Atividade{
+        display: block;
+    }
+
+    #atividade{
+        width: 100%;
+        height: 4cm;
+        font-size: 16px;
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+
+
+    }
+
+    #dataInicio{
+        width: 45%;
+        height: 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+
+    }
+    #removerMyJob{
+        height: 30px;
+        font-size: 12px;
+        margin:auto;
+        margin-top: 3px;
+    }
+
+
+    /*Experiencias Profissionais*/
+
+    #preview{
+        border-radius: 8px;
+    }
+
+    [id^= empresa_],[id^= cargo_]  {
+        width: 100%;
+        height: 20px;
+        font-size: 15px;
+        margin-top: 1px;
+        margin-bottom: 10px;
+
+        }
+
+    [id^= atividade_]{
+        width: 100%;
+        height: 4cm;
+        font-size: 16px;
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+
+    }
+
+    [id^= dataInicio_],[id^=dataTermino_] {
+        width: 40%;
+        height: 20px;
+        font-size: 14px;
+    }
+
+
+    /*Informação Academica*/
+
+    [id^= inputAcademic_],[id^= inputForm_]{
+        width: 100%;
+        height: 20px;
+        font-size: 15px;
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+    [id^= startDate_],[id^= endDate_]{
+        width: 40%;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    [id^= checkbox_]{
+        width: 14px;
+        height: 14px;
+        justify-content: left;
+    }
+
+
+    /*Informações Complementares*/
+
+    [id^= infoAdc_]{
+        width: 100%;
+        height: 20px;
+        font-size: 15px;
+    }
+
+    #view,#generate{
+        font-size: 15px;
+        height: 20px;
+        margin-bottom: 12px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(221, 221, 218);
+
+    }
+
+
+    /*Campo Hide*/
+
+    #previewName{
+        text-align: center;
+    }
+
+     #contAdress{
+        display: block;
+        align-items: center;
+        text-align: center;
+        justify-items: center; 
+    }
+
+}  
