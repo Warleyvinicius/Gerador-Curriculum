@@ -499,7 +499,7 @@ if(Email){
 
 }
 
-cnhValida = ['a','b','c','d','e','ab','ac','ad','ae']
+cnhValida = ['a','A','b','B','c','C','d','D','e','E','ab','AB','ac','AC','ad','AD','ae','AE']
 if(cnhValida.includes(Cnh)){
   document.getElementById('previewCnh').textContent = `CNH: ${Cnh.toUpperCase()}`
 }
@@ -994,3 +994,4 @@ html2pdf().set(opc).from(divCurriculum).toPdf().get('pdf').then(function (pdf) {
   document.body.classList.remove('sem-fundo');
   }); 
 })
+
